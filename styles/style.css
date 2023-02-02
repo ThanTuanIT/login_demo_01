@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-login {
+    width: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.message p {
+    opacity: 0.4;
+    margin-top: 8px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input input[type = text],
+.input input[type = password] {
+    padding: 16px 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.input input[type = text]:focus,
+.input input[type = password]:focus {
+    outline: none
+}
+
+.sub-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-input label, .sub-input a {
+    opacity: 0.6;
+}
+
+.sub-input a {
+    color: #000;
+}
+
+
+.btn {
+    width: 100%;
+    padding: 12px 8px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+}
+
+.or {
+    margin: 20px 0;
+    opacity: 0.3;
+}
+
+span {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    text-align: center;
+}
+
+span::after, span::before {
+    content: "";
+    height: 1px;
+    background-color: black;
+    margin-top: 9px;
+}
+
+
+.btn-login {
+    margin-top: 40px;
+    background-color: #367BF6;
+}
+
+.btn-fb {
+    background-color: #415993;
+}
+
+.btn-tw {
+    background-color: #4BA1EA;
+}
+
+.btn-gg {
+    background-color: #D85040;
+}
+
+
+
+.social-login i {
+    color: white;
+    margin-left: 1px;
+    position: relative;
+    right: 10px;
+}
+
+.social-login + .social-login {
+    margin-top: 12px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
